@@ -22,7 +22,8 @@ class Arena(storyAgent):
         self.ennemy = False
 
     def battle(self):
-        """function to ask player for an action and execute it while both player or ennemy are alive"""
+        """function to ask player for an action and execute it while both player or ennemy are alive
+            Fonction pour demander au joueur une action et l'exécuter pendant que le joueur et l'ennemi sont en vie"""
         self.transition(2)
         # As long both characters are alive
         while self.player.life > 0 and self.ennemy.life > 0:

@@ -15,6 +15,7 @@ if __name__ == '__main__':
     ]
     narrator.tell(introduction)
     # Allow the user to choose his type of character and retrieve it from the factory
+    # Permettre à l'utilisateur de choisir son type de personnage et de le récupérer en factory
     choice = narrator.choose_character()
     player = Factory.get_character(choice)
     narrator.player_customization(player)
